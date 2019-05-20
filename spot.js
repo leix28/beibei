@@ -10,13 +10,9 @@
     
     function start() {
         document.getElementById('go').removeEventListener('click', start);
-        promise.then(() => engine.toText('L'))
+        promise.then(() => engine.toText('LOVE'))
         .then(() => engine.shake())
-        .then(() => engine.toText('O'))
-        .then(() => engine.shake())
-        .then(() => engine.toText('V'))
-        .then(() => engine.shake())
-        .then(() => engine.toText('E'))
+        .then(() => engine.toText('BEI BEI'))
         .then(() => engine.shake())
         .then(() => engine.clear())
         .then(() => document.getElementById('go').addEventListener('click', start));
